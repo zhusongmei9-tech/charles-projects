@@ -29,7 +29,7 @@ function apiUrl(endpoint, params) {
 
 async function getJson(url, attempt = 1) {
   const response = await fetch(url, {
-    headers: { "user-agent": "JobCloud/1.0 (+public recruitment data importer)" },
+    headers: { "user-agent": "SelectSkills/1.0 (+public recruitment data importer)" },
   });
   if (!response.ok) {
     if (attempt < 3) {
@@ -49,7 +49,7 @@ async function getWorkdayJson(url, options = {}, attempt = 1) {
     headers: {
       accept: "application/json",
       "content-type": "application/json",
-      "user-agent": "JobCloud/1.0 (+public recruitment data importer)",
+      "user-agent": "SelectSkills/1.0 (+public recruitment data importer)",
       ...(options.headers || {}),
     },
   });

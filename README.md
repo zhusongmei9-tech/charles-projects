@@ -6,4 +6,4 @@
 
 | 目录 | 项目 | 说明 | 技术栈 |
 | --- | --- | --- | --- |
-| [`selectskills/`](./selectskills) | JobCloud · 岗位技能星图 | 把字节跳动、腾讯、阿里巴巴的真实技术岗位 JD 转成可交互的技能图谱，支持技能频次分析、技能 DAG、课程图谱、产品岗位分析与公司对比 | React 19 · Vite 8 · Three.js · Recharts |
+| [`selectskills/`](./selectskills) | SelectSkills · 岗位技能星图 | 把字节跳动、腾讯、阿里巴巴的真实技术岗位 JD 转成可交互的技能图谱，支持技能频次分析、技能 DAG、课程图谱、产品岗位分析与公司对比 | React 19 · Vite 8 · Three.js · Recharts |

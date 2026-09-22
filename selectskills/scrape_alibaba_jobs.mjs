@@ -144,7 +144,7 @@ async function scrapeBatch(browser, batch) {
 
 async function scrapeSocialRecruitment() {
   const landingResponse = await fetchWithRetry(SOCIAL_POSITION_PAGE, {
-    headers: { "user-agent": "JobCloud/1.0 (+public recruitment data importer)" },
+    headers: { "user-agent": "SelectSkills/1.0 (+public recruitment data importer)" },
   });
   const html = await landingResponse.text();
   const token = html.match(/["']?__token__["']?\s*:\s*["']([^"']+)["']/)?.[1];
@@ -163,7 +163,7 @@ async function scrapeSocialRecruitment() {
         cookie,
         origin: "https://talent.alibaba.com",
         referer: "https://talent.alibaba.com/",
-        "user-agent": "JobCloud/1.0 (+public recruitment data importer)",
+        "user-agent": "SelectSkills/1.0 (+public recruitment data importer)",
       },
       body: JSON.stringify({
         batchId: "",
